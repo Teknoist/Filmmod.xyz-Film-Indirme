@@ -3,13 +3,13 @@
 
 # Termuxda Filmmod.xyz-Film-İndirme 
 Sırası ile komutları girin
-
+```
 pkg install wget 
 
 wget install https://raw.githubusercontent.com/Teknoist/Filmmod.xyz-Film-Indirme/main/filmmodtermux.sh
 
 sh filmmodsetup.sh
-
+```
 Sonrasında film kodu istediğinde IMDB sitesindeki film linkini sonundaki kodu yazınız 
 Örneğin "https://www.imdb.com/title/tt4682266/" ise link Kod "tt4682266"dur
 
@@ -30,7 +30,7 @@ Ama izlediğiniz cihazda altyazılarda sıkıntı yaşıyor iseniz İndir_hard.b
 
 # Linuxda Filmmod.xyz-Film-İndirme
 Sırası ile komutları girin
-
+```
 sudo apt-get update
 
 sudo apt get install wget 
@@ -38,7 +38,7 @@ sudo apt get install wget
 wget install https://raw.githubusercontent.com/Teknoist/Filmmod.xyz-Film-Indirme/main/filmmod.sh
 
 sh filmmodsetup.sh
-
+```
 Sonrasında film kodu istediğinde IMDB sitesindeki film linkini sonundaki kodu yazınız 
 Örneğin "https://www.imdb.com/title/tt4682266/" ise link Kod "tt4682266"dur
 
