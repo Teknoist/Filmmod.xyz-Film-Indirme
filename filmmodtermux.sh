@@ -1,5 +1,4 @@
 #!/bin/bash
-
 pkg install ffmpeg -y 
 termux-setup-storage 
 wait 4
