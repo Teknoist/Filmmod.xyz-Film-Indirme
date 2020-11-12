@@ -4,7 +4,11 @@
 # Termuxda Filmmod.xyz-Film-İndirme 
 Sırası ile komutları girin
 ```
-pkg install wget 
+pkg install wget ffmpeg -y
+
+termux-setup-storage
+
+cd ~/storage/downloads
 
 wget install https://raw.githubusercontent.com/Teknoist/Filmmod.xyz-Film-Indirme/main/filmmodtermux.sh
 
