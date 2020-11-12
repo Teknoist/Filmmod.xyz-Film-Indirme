@@ -24,7 +24,7 @@ Sonrasında film kodu istediğinde IMDB sitesindeki film linkini sonundaki kodu 
 
 Film işlem bitince ffmpeg.exe oldugu klasörde  filminkodu.mkv şeklinde inmiş olacaktır.
 
-# İndir.bat filmi indirip altyazıyı içine ekleyip tek bir dosya olarak sunacak. Örneğin tt4682266.mkv gibi
+İndir.bat filmi indirip altyazıyı içine ekleyip tek bir dosya olarak sunacak. Örneğin tt4682266.mkv gibi
 
 Ama izlediğiniz cihazda altyazılarda sıkıntı yaşıyor iseniz İndir_hard.bat kullanıp Altyazıyı videoya gömebilirsiniz. Ama bu işlem yüksek miktarda işlemci kullanağı için süresi bilgisayarınızın gücüne bağlı uzayacaktır.
 
