@@ -15,6 +15,7 @@ ffmpeg.exe -v quiet -stats -y -protocol_whitelist file,http,https,tcp,tls,crypto
 if %errorlevel% neq 0 goto multihata
 del /f %var%.ass
 set sonuc=Multi
+echo "%sonuc% İndirme Tamamlandı"
 goto end
 
 :altyazi
@@ -22,14 +23,16 @@ ffmpeg.exe -v quiet -y -protocol_whitelist file,http,https,tcp,tls,crypto -i htt
 if %errorlevel% neq 0 goto althata
 ffmpeg.exe -v quiet -stats -y -protocol_whitelist file,http,https,tcp,tls,crypto -i https://srv7.filmmodu.xyz/%var%/1080p.en.m3u8 -i %var%.ass -map 0:v -map 0:a -map 1:s -metadata:s:a language=eng -metadata:s:s:1 language=tur -c copy %var%.mkv
 del /f %var%.ass
-set sonuc=Altyazi
+set sonuc=Altyazılı
+echo "%sonuc% İndirme Tamamlandı"
 goto end
 
  
 :dublaj
 ffmpeg.exe -v quiet -stats -y -protocol_whitelist file,http,https,tcp,tls,crypto -i https://srv7.filmmodu.xyz/%var%/1080p.tr.m3u8 -map 0:v -map 0:a -map -metadata:s:a language=tur -c copy %var%.mkv
 if %errorlevel% neq 0 goto dubhata
-set sonuc=Dublaj
+set sonuc=Dublajlı
+echo "%sonuc% İndirme Tamamlandı"
 goto end
 
 
@@ -58,11 +61,11 @@ if %hata%==H goto end-hata
 if %hata%==e goto altyazi
 if %hata%==h goto end-hata
 
-:end
-echo "%sonuc% İndirme Tamamlandı"
-pause
 
 :end-hata
 del /f %var%.ass
 echo "İndirilemedi Kulanıcı Tarafından İptal Edildi"
+
+
+:end
 pause
