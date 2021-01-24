@@ -1,5 +1,8 @@
 #EXTM3U
 #EXTINF:-1,Harley Quinn
 https://srv7.filmmodu.xyz/tt7713068/1080p.tr.m3u8
-#EXTINF:-1,Home Video 2
-https://srv7.filmmodu.xyz/tt1270797/1080p.en.m3u8
+#EXTINF:-1,Venom
+https://srv7.filmmodu.xyz/tt1270797/1080p.tr.m3u8
+#EXTINF:-1,Demon Eye
+https://srv7.filmmodu.xyz/tt8028600/1080p.tr.m3u8
+
